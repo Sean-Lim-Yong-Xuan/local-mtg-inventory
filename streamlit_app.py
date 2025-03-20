@@ -8,8 +8,8 @@ from pymongo import MongoClient
 
 #My stuff (19/3/2025)
 # MongoDB Connection
-#MONGO_URI = "mongodb://localhost:27017/"
-client = pymongo.MongoClient("mongodb://localhost:27018/")
+MONGO_URI = "mongodb://localhost:27018/"
+client = MongoClient(MONGO_URI)
 
 db = client["localdb"]
 collection = db["allmtgcards"]
