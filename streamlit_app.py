@@ -10,8 +10,6 @@ from pymongo import MongoClient
 # MongoDB Connection
 #MONGO_URI = "mongodb://localhost:27017/"
 client = pymongo.MongoClient("mongodb://localhost:27017/")
-if client:
-    st.write ("Connection successfully")
 
 db = client["localdb"]
 collection = db["allmtgcards"]
@@ -27,6 +25,9 @@ st.title("🃏 MTG Card Inventory")
 
 #df = load_data()
 allmtgcards = list(collection.find({}, {"_id": 0}))  # Exclude ObjectId
+
+if allmtgcards:
+    st.write ("Zhe bluetooth device has connected successfullei")
 
 def display_data_from_mongodb():
     """Displays data from MongoDB in Streamlit."""
