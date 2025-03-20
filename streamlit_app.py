@@ -9,7 +9,7 @@ from pymongo import MongoClient
 #My stuff (19/3/2025)
 # MongoDB Connection
 #MONGO_URI = "mongodb://localhost:27017/"
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+client = pymongo.MongoClient("mongodb://localhost:27018/")
 
 db = client["localdb"]
 collection = db["allmtgcards"]
