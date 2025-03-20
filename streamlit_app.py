@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sns
 import pymongo
-#from pymongo import MongoClient
+from pymongo import MongoClient
 
 #My stuff (19/3/2025)
 # MongoDB Connection
